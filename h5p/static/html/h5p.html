@@ -1,0 +1,13 @@
+<div class="h5p_block">
+    Score<div class="count">{{allCards}}</div>
+    <div class="block-memory-game">
+        {% for card in cardList%}
+        <div class="block-memory-card" id="{{card.Card_id}}">
+            <div class="block-front"></div>
+            <div class="block-back">
+                <img src="{{card.img_url}}" alt="" width="100" height="100" />
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
